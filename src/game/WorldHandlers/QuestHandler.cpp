@@ -335,7 +335,7 @@ void WorldSession::HandleQuestgiverRequestRewardOpcode(WorldPacket& recv_data)
     }
 }
 
-void WorldSession::HandleQuestgiverCancel(WorldPacket& /*recv_data*/)
+void WorldSession::HandleQuestgiverCancel(WorldPacket& recv_data)
 {
     DEBUG_LOG("WORLD: Received opcode CMSG_QUESTGIVER_CANCEL");
 

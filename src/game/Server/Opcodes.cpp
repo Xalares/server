@@ -484,7 +484,7 @@ void InitializeOpcodes()
     OPCODE(SMSG_QUESTGIVER_OFFER_REWARD,                 STATUS_NEVER,    PROCESS_INPLACE,      &WorldSession::Handle_ServerSide               );
     OPCODE(CMSG_QUESTGIVER_CHOOSE_REWARD,                STATUS_LOGGEDIN, PROCESS_THREADUNSAFE, &WorldSession::HandleQuestgiverChooseRewardOpcode);
     OPCODE(SMSG_QUESTGIVER_QUEST_INVALID,                STATUS_NEVER,    PROCESS_INPLACE,      &WorldSession::Handle_ServerSide               );
-    //OPCODE(CMSG_QUESTGIVER_CANCEL,                       STATUS_LOGGEDIN, PROCESS_THREADUNSAFE, &WorldSession::HandleQuestgiverCancel          );
+    OPCODE(CMSG_QUESTGIVER_CANCEL,                       STATUS_LOGGEDIN, PROCESS_THREADUNSAFE, &WorldSession::HandleQuestgiverCancel          );
     OPCODE(SMSG_QUESTGIVER_QUEST_COMPLETE,               STATUS_NEVER,    PROCESS_INPLACE,      &WorldSession::Handle_ServerSide               );
     OPCODE(SMSG_QUESTGIVER_QUEST_FAILED,                 STATUS_NEVER,    PROCESS_INPLACE,      &WorldSession::Handle_ServerSide               );
     //OPCODE(CMSG_QUESTLOG_SWAP_QUEST,                     STATUS_LOGGEDIN, PROCESS_THREADUNSAFE, &WorldSession::HandleQuestLogSwapQuest         );
