@@ -922,7 +922,7 @@ void Pet::InitStatsForLevel(uint32 petlevel)
         SetModifierValue(UnitMods(UNIT_MOD_RESISTANCE_START + i), BASE_VALUE, float(createResistance[i]));
     }
 
-    float health, mana, armor, minDmg;
+    float health = 0.0f, mana = 0.0f, armor=0.0f, minDmg=0.0f;
 
     switch (getPetType())
     {
